@@ -44,9 +44,6 @@ function friday_theme_setup(){
 	/* === BACKGROUND === */
 	tamatebako_include( 'includes/background' );
 
-	/* === UTILITY: Custom CSS === */
-	tamatebako_include( 'includes/utility' );
-
 }
 
 do_action( 'tamatebako_after_setup' );
