@@ -1,8 +1,8 @@
-=== NokoNoko ===
+=== Friday ===
 Contributors: turtlepod
 Requires at least: 4.1
-Tested up to: 4.5
-Version: 1.0.0
+Tested up to: 4.7
+Version: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, grid-layout, left-sidebar, right-sidebar, theme-options, custom-background, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, post-formats, sticky-post, threaded-comments, translation-ready, blog
@@ -62,6 +62,11 @@ Navigate to "Apearance > Customize" Screen and go to "Site Identity" Tab to uplo
 You can change Global Layout in Customize Page.
 
 == Changelog ==
+
+= 1.1.1 - 05.DEC.2016 =
+
+* Update to tamatebako 3.4.0 (No Custom CSS)
+* Update Readme Header.
 
 = 1.1.0 - 12.NOV.2016 =
 
