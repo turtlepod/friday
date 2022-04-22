@@ -41,9 +41,6 @@ function tamatebako_setup(){
 
 	/* === Filters: Set Better Default Output === */
 
-	/* TinyMCE add body class "entry-content" for easier styling. */
-	add_filter( 'tiny_mce_before_init', 'tamatebako_tinymce_body_class', 5 );
-
 	/* === Widgets: Selective Refresh Support === */
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -169,19 +166,6 @@ function tamatebako_scripts(){
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-
-
-/**
- * Add TinyMCE Body Class
- * Add "entry-content" in editor style for easier copy-paste CSS to editor.css
- * need to consider this when styling '<body>' and '<div class"entry-content">'.
- * @since  0.1.0
- */
-function tamatebako_tinymce_body_class( $settings ){
-	$settings['body_class'] = $settings['body_class'] . ' entry-content';
-	return $settings;
-}
-
 
 /**
  * Fix WordPress Front Page Template

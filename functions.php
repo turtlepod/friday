@@ -13,25 +13,13 @@ require_once get_template_directory() . '/library/tamatebako.php';
  */
 function friday_theme_setup(){
 
-	/* === TRANSLATION === */
 	tamatebako_include( 'includes/translation' );
-
-	/* === SCRIPTS === */
 	tamatebako_include( 'includes/scripts' );
-
-	/* === SETUP: Sidebars, Menus, Image Sizes, Content Width === */
 	tamatebako_include( 'includes/setup' );
-
-	/* === LOGO === */
 	tamatebako_include( 'includes/custom-logo' );
-
-	/* === CUSTOM FONTS === */
 	tamatebako_include( 'includes/custom-fonts' );
-
-	/* === LAYOUTS === */
 	tamatebako_include( 'includes/layouts' );
-
-	/* === BACKGROUND === */
 	tamatebako_include( 'includes/background' );
+	tamatebako_include( 'includes/blocks' );
 }
-add_action( 'after_setup_theme', 'friday_theme_setup', 5 );
+add_action( 'after_setup_theme', 'friday_theme_setup', 10 );
