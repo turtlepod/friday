@@ -15,6 +15,7 @@ function friday_block_editor_assets() {
 	// CSS.
 	wp_enqueue_style(
 		"{$theme}_editor_style",
+		//tamatebako_theme_file( 'dist/css/editor', 'css' ),
 		tamatebako_theme_file( 'assets/css/editor', 'css' ),
 		[],
 		tamatebako_theme_version()

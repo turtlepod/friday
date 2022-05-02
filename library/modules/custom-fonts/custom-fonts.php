@@ -72,7 +72,7 @@ function tamatebako_fonts_subsets(){
  * Set to false to load all available weight/style.
  */
 function tamatebako_fonts_allowed_weight(){
-	$weights = array( 
+	$weights = array(
 		'400',
 		'400italic',
 		'700',
@@ -90,7 +90,7 @@ function tamatebako_fonts_allowed_weight(){
  * Fonts Customizer Label
  */
 function tamatebako_fonts_label(){
-	$defaults = array( 
+	$defaults = array(
 		'fonts' => 'Fonts',
 	);
 	$theme_support = get_theme_support( 'tamatebako-custom-fonts' );
@@ -159,6 +159,7 @@ function tamatebako_fonts_all_google_url(){
 
 /* Load font scripts */
 add_action( 'wp_enqueue_scripts', 'tamatebako_fonts_enqueue_scripts' );
+add_action( 'enqueue_block_editor_assets', 'tamatebako_fonts_enqueue_scripts' );
 
 /**
  * Enqueue ( Google ) Fonts
@@ -183,7 +184,7 @@ function tamatebako_fonts_print_style(){
 
 	/* Config */
 	$config = tamatebako_fonts_config();
-	
+
 	/* Foreach setting */
 	foreach( $config as $section => $section_data ){
 

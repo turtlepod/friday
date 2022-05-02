@@ -1,0 +1,16 @@
+@import url("core/buttons.css");
+@import url("core/headings.css");
+
+
+/* Link */
+a,
+.block-editor-block-list__layout a {
+	color: #0073aa;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+.block-editor-block-list__layout a:hover.
+.block-editor-block-list__layout a:focus {
+	color: #00a0d2;
+}

@@ -1,0 +1,52 @@
+/* === LAYOUTS === */
+
+/* Right Sidebar */
+.layout-content-sidebar1 .content-wrap{
+	margin-right: 360px;
+	margin-right: 36rem;
+}
+.layout-content-sidebar1 #content{
+	float: left;
+}
+.layout-content-sidebar1 #sidebar-primary{
+	float: right;
+	margin-right: -360px;
+	margin-right: -36rem;
+}
+/* Left Sidebar */
+.layout-sidebar1-content .content-wrap{
+	margin-left: 360px;
+	margin-left: 36rem;
+}
+.layout-sidebar1-content #content{
+	float: right;
+}
+.layout-sidebar1-content #sidebar-primary{
+	float: left;
+	margin-left: -360px;
+	margin-left: -36rem;
+}
+
+@media screen and (max-width: 900px){
+	/* Push primary sidebar to bottom */
+	.wordpress .content-wrap{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#header > .wrap{
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	.wordpress #content{
+		float: none;
+	}
+	.wordpress #sidebar-primary{
+		margin-right: 0;
+		margin-left: 0;
+		float: left;
+		width: 100%;
+	}
+	#main > .wrap{
+		width: 640px;
+	}
+}
